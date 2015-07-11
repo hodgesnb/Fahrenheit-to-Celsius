@@ -1,0 +1,21 @@
+<html>
+<head>
+<title>Fahrenheit to Celsius</title>
+function display() {
+  converted = (5/9) * (document.form1.yourtemp.value - 32);
+  var message = "<ul><b>Celsius: </b>" + converted;
+  document.getElementById("result").innerHTML = message;
+}
+</script>
+</head>
+<body>
+<h1>Convert from Fahrenheit to Celsius</h1>
+Enter the temperature in Fahrenheit. When you press the Convert button,
+the data you entered will be displayed in Celsius.
+<form name="form1">
+<p><b>Fahrenheit:</b> <input TYPE="number" SIZE="5" NAME="yourtemp">
+<p><input TYPE="BUTTON" VALUE="Convert" onClick="display();"></p>
+</form>
+<div id="result"></div>
+</body>
+</html>
